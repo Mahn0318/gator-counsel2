@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <!-- <script src="SCRIPT/jquery-3.5.1.min.js"></script> -->
+
+    <!-- head of the homePage, where the styling is defined ------------------------------------------------------------------------>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+         <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+
+
+        <link rel="stylesheet" href="./STYLE/STYLE_homePage.css">
+
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <title>Gator Counsel</title>
+
+
+
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+       
+      
+
+
+        <!-- Icons links ---------------------------------------------------------->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+            integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- .(end) Icons links ---------------------------------------------------->
+
+
+
+
+       
+
+
+
+    </head>
+
+
+
+
+
+    <!-- .(end) head of the homePage, where the styling is defined --------------------------------------------------------------------->
+
+    <!-- header of the homePage --------------------------------------------------------------------------------------------------------->
+    <div class="pre-header">
+
+        <img src="images/US_flag_large_51_stars.png" class="pre-header-usa" alt=EN-US>
+        <p class="text-pre-header">USA-EN</p>
+
+
+        <div class="account-menu">
+            <input type="button" class="button-pre-header" id="logIn" readonly value="LOG IN" onclick="openLogIn()"></input>
+            <input type="button" class="button-pre-header" id="signUp" readonly value="SIGN UP" onclick="openSignUp()"></input>
+        </div>
+        <p class="user-text-pre-header" id="user"></p>
+
+        <input type="image" class="pre-header-login" alt="Log In" src="images/outline_person_outline_black_24dp.png" readonly value="open" onclick="toggleAccountMenu()"></input>
+        <input type="image" class="pre-header-profile" alt="Profile" src="images/outline_person_outline_black_24dp.png" readonly value="open" onclick="toggleProfileMenu()"></input>
+
+
+    </div>
+    <div class="header">
+        <div class="logo">       
+            <p class="text-header">GATOR COUNSEL</p>
+            <img class="gator-logo" alt="gator counsel" src="images/Florida_Gators_gator_logo.png" readonly value="open"></input>
+        </div>
+        <div class="container-options-header">
+            <div class="options-header-actual">
+                HOME PAGE
+            </div>
+            <div class="options-header" onclick="window.location.href ='adventures.html'">
+                PRODUCT
+            </div>
+            <div class="options-header" onclick="window.location.href ='rankings.html'" >
+                DOWNLOAD
+            </div>
+            <!-- <div class="options-header"  onclick="window.location.href ='faq.html'">
+                FAQ
+            </div> -->
+
+            <div class="options-header"  onclick="show_msg_window()">
+                message 
+            </div>
+           
+
+            <div class="options-header"  id="reg-login-section">
+                <div onclick="show_register_window()">register</div> &nbsp;&nbsp;/ &nbsp;&nbsp;<div onclick="show_login_window()">login</div>
+            </div>
+
+            <!-- <div class="options-header"  onclick="show_login_window()">
+                
+            </div> -->
+
+
+        </div>
+
+        <div class="search">
+            <form id="searchform">
+                <input class="searchTerm" id="search" type="text" name="search" title="Search" />
+            </form>
+                <button class="searchButton" id="submit" title="Search">
+                    <i class="fa fa-search"></i>
+                </button>
+        </div>
+
+       
+
+    </div>
+
+    <div class="body">
+        <div class="profile-menu">
+            <input type="button" class="button-profile-menu" readonly value="PROFILE" onclick="openProfile()"></input>
+            <input type="button" class="button-profile-menu" readonly value="LOG OUT" onclick="sureLogOut()"></input>
+            <div class="logout-menu">
+                <input type="button" class="button-logout-menu" readonly value="YES" onclick="logOut()"></input>
+                <input type="button" class="button-logout-menu" readonly value="NO" onclick="noLogOut()"></input>
+            </div>
+
+        </div>
+
+        <div class="mask"></div>
+            <div class="logIn-menu">
+                <input type="image" class="close-logIn" alt="image" src="images/outline_close_black_24dp.png" readonly value="CLOSE" onclick="closeLogIn()"></input>
+                <div class="container-logIn-menu">
+                    <p class="main-text-logIn-menu">LOG IN FORM</p><br><br>
+                    <form action="javascript:void(0);" onsubmit="checkCookie()">
+                        <label for="form1-logIn" class="text-logIn-menu">Email:</label>
+                        <input type="text" class="form-logIn" id="form1-logIn" name="email" placeholder="Type your email..." required><br>
+                        <br>
+                        <label for="form2-logIn" class="text-logIn-menu">Password:</label>
+                        <input type="password" class="form-logIn" id="form2-logIn" name="password" show="*" placeholder="Type your password..." required>
+                        <br>
+                        <input type="submit" class="button-logIn" readonly value="Submit">
+                    </form>
+                </div>
+            </div>
+
+            <div class="signUp-menu">
+                <input type="image" class="close-logIn" alt="image" src="images/outline_close_black_24dp.png" readonly value="CLOSE" onclick="closeSignUp()"></input>
+                <div class="container-signUp-menu">
+                    <p class="main-text-logIn-menu">SIGN UP FORM</p>
+                    <form action="javascript:void(0);" onsubmit="checkCookieFirst()">
+                        <p class="secondary-text-logIn-menu">ACCOUNT INFORMATION</p>
+                        <label for="form1-signUp" class="text-signUp-menu">Email:</label>
+                        <input type="text" class="form-logIn" id="form1-signUp" name="email" placeholder="Type your email..." required><br>
+                        <br>
+                        <label for="form2-signUp" class="text-signUp-menu">Password:</label>
+                        <input type="password" class="form-logIn" id="form2-signUp" name="password" show="*" placeholder="Type your password..." required>
+                        <br><br>
+
+                        <p class="secondary-text-logIn-menu">PERSONAL INFORMATION</p><br>
+                        <label for="form3-signUp" class="text-signUp-menu">Name and surname:</label>
+                        <input type="text" class="form-logIn" id="form3-signUp"  name="password" placeholder="Type your complete name..." required>
+                        <br><br>
+                        <label for="form4-signUp" class="text-signUp-menu">Username:</label>
+                        <input type="text" class="form-logIn" id="form4-signUp" name="username" placeholder="Type your username..." required>
+                        <br><br>
+                        <label for="form5-signUp" class="text-signUp-menu">Date of birth:</label>
+                        <input type="date" class="form-logIn" id="form5-signUp" name="birth" placeholder="Type your password..." required>
+                        <br><br>
+                        <label for="form6-signUp" class="text-signUp-menu">Interested in:</label>
+                        <input type="text" class="form-logIn" id="form6-signUp" name="interests" placeholder="Type your interests..." required>
+                        <br><br>
+                        <input type="submit" class="button-logIn" readonly value="Submit">
+                    </form>
+                </div>
+            </div>
+
+            <div class="profile">
+                <input type="image" class="close-logIn" alt="image" src="images/outline_close_black_24dp.png" readonly value="CLOSE" onclick="closeProfile()"></input>
+                <div class="container-profile">
+                    <p class="main-text-logIn-menu">PROFILE</p>
+
+                        <p class="secondary-text-logIn-menu">ACCOUNT INFORMATION</p>
+                        <input type="image" class="profile-photo" alt="image" src="images/outline_person_outline_white_24dp.png" readonly value="open"></input>
+                        <p id="random1" class="text-signUp-menu">Number of likes (received):</p>
+                        <p id="random2" class="text-signUp-menu">Number of likes (given):</p>
+                        <p id="random3" class="text-signUp-menu">Number of shared experiences:</p><br>
+
+                        <p class="secondary-text-logIn-menu">PERSONAL INFORMATION</p>
+                        <p id="profile-info1" class="text-signUp-menu">Name and surname:</p>
+                        <p id="profile-info2" class="text-signUp-menu">Username:</p>
+                        <p id="profile-info3" class="text-signUp-menu">Date of birth:</p>
+                        <p id="profile-info4" class="text-signUp-menu">Interests:</p><br>
+
+                    <form action="javascript:void(0);" onsubmit="modCookie([],7)">
+
+                        <p class="secondary-text-logIn-menu">PERSONAL INFORMATION MODIFICATION</p><br>
+                        <label for="form1-profile" class="text-signUp-menu">Name and surname:</label>
+                        <input type="text" class="form-logIn" id="form1-profile" name="password" placeholder="Type your complete name..." required>
+                        <br><br>
+                        <label for="form2-profile" class="text-signUp-menu">Username:</label>
+                        <input type="text" class="form-logIn" id="form2-profile" name="username" placeholder="Type your username..." required>
+                        <br><br>
+                        <label for="form3-profile" class="text-signUp-menu">Date of birth:</label>
+                        <input type="date" class="form-logIn" id="form3-profile" name="birth" placeholder="Type your password..." required>
+                        <br><br>
+                        <label for="form4-profile" class="text-signUp-menu">Interested in:</label>
+                        <input type="text" class="form-logIn" id="form4-profile" name="interests" placeholder="Type your interests..." required>
+                        <br><br>
+
+                        <input type="submit" class="button-logIn" readonly value="Upload" onclick="modifyProfile()">
+                    </form>
+                    <div class="mask2"></div>
+                    <div class="modification">
+                        <input type="image" class="close-logIn" alt="image" src="images/outline_close_black_24dp.png" readonly value="CLOSE" onclick="closeModify()"></input>
+                        <div class="container-modification">
+                            <p class="secondary-text-logIn-menu">YOUR ACCOUNT INFORMATION HAS BEEN MODIFIED SUCCESFULLY!</p><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+
+    <!-- .(end) header of the homePage --------------------------------------------------------------------------------------------------------->
+
+    <!-- body of the homePage  ----------------------------------------------------------------------------------------------------------------->
+    <body>
+        <!-- login and register pop up-->
+
+        <div class="ui modal" id="register-window">
+          <i class="close icon"></i>
+          <div class="header">
+            Regster New User
+          </div>
+          <div class="content">
+            <div class="ui medium image">
+              <!-- <img src="IMAGES/back.png"> -->
+            </div>
+            <div class="description">
+    
+             <div class="ui fluid icon input">
+                  <input type="text" placeholder="Please input the user name" id="input-username">
+                 
+             </div>
+             <br>
+             
+             <div class="ui fluid icon input">
+                  <input type="text" placeholder="Please input the password" id="input-password">
+                 
+             </div>
+              <br>
+
+             <div class="ui fluid icon input">
+                  <input type="text" placeholder="Please confirm the password" id="input-confirm">
+                  
+             </div>
+              <br>
+            
+
+            </div>
+          </div>
+          <div class="actions">
+            <div class="ui black icon button postive labeled right" onclick='register()'>
+              submit
+            </div>
+           <!--  <div class="ui negtive button">
+              cancle
+            </div> -->
+          </div>
+        </div>
+
+
+
+       <!--  login window -->
+        <div class="ui modal" id="login-window">
+          <i class="close icon"></i>
+          <div class="header">
+            User login 
+          </div>
+          <div class="content">
+            <div class="ui medium image">
+              <!-- <img src="IMAGES/back.png"> -->
+            </div>
+            <div class="description">
+    
+             <div class="ui fluid icon input">
+                  <input type="text" placeholder="Please input the user name" id="login-input-username">
+             </div>
+             <br>
+             
+             <div class="ui fluid icon input">
+                  <input type="text" placeholder="Please input the password" id="login-input-password">
+             </div>
+              <br>
+
+            
+
+            </div>
+          </div>
+          <div class="actions">
+            <div class="ui black icon button postive labeled right" onclick='login()'>
+              login
+            
+            </div>
+           <!--  <div class="ui negtive button">
+              cancle
+            </div> -->
+          </div>
+        </div>
+
+
+        <!--  create msg  window -->
+        <div class="ui modal" id="msg-window">
+          <i class="close icon"></i>
+          <div class="header">
+           Please leave a message for us
+          </div>
+          <div class="content">
+            <div class="ui medium image">
+              <!-- <img src="IMAGES/back.png"> -->
+            </div>
+            <div class="description">
+    
+             <div class="ui fluid icon input">
+                  <input type="text" placeholder="Please input the msg content!" id="input-msg">
+             </div>
+             <br>
+
+            </div>
+          </div>
+          <div class="actions">
+            <div class="ui black icon button postive labeled right" onclick='save_msg()'>
+              save
+            
+            </div>
+            <div class="ui negtive succes button" onclick='show_all_msg_window()'>
+              show all msgs
+            </div>
+          </div>
+        </div>
+
+
+
+        <!--  show all  msg  window -->
+        <div class="ui modal" id="all-msg-window">
+          <i class="close icon"></i>
+          <div class="header">
+           All messags here !
+          </div>
+          <div class="content">
+            <div class="ui medium image">
+              <!-- <img src="IMAGES/back.png"> -->
+            </div>
+            <div class="description">
+    
+             <div class="ui fluid icon input">
+
+                        <table class="ui table">
+                          <thead>
+                            <tr>
+                              <th>Author</th>
+                              <th>Content</th>
+                              <th>Time</th>
+                            </tr>
+                          </thead>
+                          <tbody id="content-table-body">
+                            <tr>
+                              <td>John Lilki</td>
+                              <td>September 14, 2013</td>
+                              <td>jhlilk22@yahoo.com</td>
+                            </tr>
+                           
+                          </tbody>
+                        </table>
+
+
+
+             </div>
+             <br>
+
+            </div>
+          </div>
+          <div class="actions">
+           <!--  <div class="ui black icon button postive labeled right" onclick='save_msg()'>
+              
+            
+            </div> -->
+           <!--  <div class="ui negtive button">
+              cancle
+            </div> -->
+          </div>
+        </div>
+
+
+
+
+        <main id = "homePage-Main">
+
+    
+            <!-- image of the frist section---------------------------------------------->
+            <div class = "firstSection" style="background-color: #459a8c;">
+                
+
+                    <img src="./IMAGES/back.png" alt="firstSectionImage1" class = "firstSectionImage1">
+                    <div class="firstSectionTitle">Welcome to Gator Counsel!</div>
+                    <div class="firstSectionDescr">Gator Counsel is a newly and fresh project focused on the wellness and care of our users. It offers an innovative way to have group counseling or private chats with your psycologist.</div>
+                    <button class="buttonVwTrips" onclick="window.location.href ='adventures.html'">IM INTERESTED!</button>
+            </div>
+            <div class = "lower-margin" style="background-color: #459a8c;">
+
+            </div>
+
+            <!-- .(end) image of the frist section-------------------------------------->
+        </main>
+
+
+
+
+
+
+    <script type="text/javascript">
+        // show
+        function show_register_window(){
+            $("#input-username").val("");
+            $("#input-password").val("");
+            $("#input-confirm").val("");
+            $('#register-window').modal('show');
+        }
+
+
+        function show_login_window(){
+            $("#login-input-username").val("");
+            $("#login-input-password").val("");
+            $('#login-window').modal('show');
+        }
+
+        function show_msg_window(){
+            $("#input-msg").val("");
+            $('#msg-window').modal('show');
+        }
+
+        function show_all_msg_window(){
+            $("#input-msg").val("");
+            $('#msg-window').modal('hide');
+
+            let body = {
+                msg:"",
+            }
+
+            $.ajax({
+                url:"../api/allmsg",//要请求的服务器url
+                data:body,//第一个name对应的是后端request.getParameter("name")的name、第二个name对应的是此js中的var name = $("#name").val();的name
+                async:true,//是否是异步请求
+                cache:false,//是否缓存结果
+                type:"POST",//请求方式
+                dataType:"json",//服务器返回什么类型数据 text xml javascript json(javascript对象)
+                success:function(result){//函数会在服务器执行成功后执行，result就是服务器返回结果
+                    alert(result.data); 
+                    // <tr>
+                    //           <td>John Lilki</td>
+                    //           <td>September 14, 2013</td>
+                    //           <td>jhlilk22@yahoo.com</td>
+                    //         </tr>
+                    html = ""     
+                   
+
+                    for(let e of result.data){
+                        row =  "<tr>" 
+                        row += "<td>" +   e.author   + "</td>" 
+                        row += "<td>" +   e.content   + "</td>" 
+                        row += "<td>" +   new Date(e.created).toLocaleString()   + "</td>" 
+                        row += "</tr>"
+                        html+= row
+                    }
+
+                    $('#content-table-body').html(html)
+
+                    $('#all-msg-window').modal('show');
+                
+                             
+                },
+                error:function(jqXHR, textStatus, errorThrown) {
+                   alert("login failed!") 
+                }
+             });
+            
+        }
+
+        // 
+        function register(){
+            let username = $("#input-username").val();
+            let password = $("#input-password").val();
+            let c_password = $("#input-confirm").val();
+
+            if (! username || username=="") {
+                alert("please input a username ")
+                return 
+            }
+
+            if (! password || password=="") {
+                alert("please input a password ")
+                return 
+            }
+
+             if (! c_password || c_password=="") {
+                alert("please input the confirmed password ")
+                return 
+            }
+
+            let body = {
+                username,
+                password
+            }
+
+            $.ajax({
+                url:"../api/register",//要请求的服务器url
+                data:body,//第一个name对应的是后端request.getParameter("name")的name、第二个name对应的是此js中的var name = $("#name").val();的name
+                async:true,//是否是异步请求
+                cache:false,//是否缓存结果
+                type:"POST",//请求方式
+                dataType:"json",//服务器返回什么类型数据 text xml javascript json(javascript对象)
+                success:function(result){//函数会在服务器执行成功后执行，result就是服务器返回结果
+                    alert(result.msg) ;      
+                             
+                },
+                error:function(jqXHR, textStatus, errorThrown) {
+                   alert(result.msg) 
+                }
+             });
+        }
+
+
+        function login(){
+            let username = $("#login-input-username").val();
+            let password = $("#login-input-password").val();
+          
+
+            if (! username || username=="") {
+                alert("please input a username ")
+                return 
+            }
+
+            if (! password || password=="") {
+                alert("please input a password ")
+                return 
+            }
+
+            let body = {
+                username,
+                password
+            }
+
+            $.ajax({
+                url:"../api/login",
+                data:body,
+                async:true,
+                cache:false,
+                type:"POST",
+                dataType:"json",
+                success:function(result){
+                    alert(result.msg);      
+
+                   
+
+                    if (result.code == 0) {
+
+                        html = "Hello : " + body.username+" , &nbsp;&nbsp;";
+                        html += "<div onclick='logout()'>Logut</div>"
+                        $('#reg-login-section').html(html);
+                        $('#login-window').modal("hide");
+                    }
+
+
+                             
+                },
+                error:function(jqXHR, textStatus, errorThrown) {
+                   alert(result.msg) 
+                }
+             });
+
+        }
+
+
+        function save_msg(){
+            let msg = $("#input-msg").val();
+        
+            if (! msg || msg=="") {
+                alert("please input some thing !")
+                return 
+            }
+            
+            let body = {
+                msg
+            }
+
+            $.ajax({
+                url:"../api/savemsg",//要请求的服务器url
+                data:body,//第一个name对应的是后端request.getParameter("name")的name、第二个name对应的是此js中的var name = $("#name").val();的name
+                async:true,//是否是异步请求
+                cache:false,//是否缓存结果
+                type:"POST",//请求方式
+                dataType:"json",//服务器返回什么类型数据 text xml javascript json(javascript对象)
+                success:function(result){//函数会在服务器执行成功后执行，result就是服务器返回结果
+                    alert(result.msg);      
+
+                    $('#login-window').modal("hide");
+                             
+                },
+                error:function(jqXHR, textStatus, errorThrown) {
+                   alert(result.msg) 
+                }
+             });
+
+        }
+
+
+        function logout(){
+           
+
+            $.ajax({
+                url:"../api/logout",//要请求的服务器url
+                data:{},//第一个name对应的是后端request.getParameter("name")的name、第二个name对应的是此js中的var name = $("#name").val();的name
+                async:true,//是否是异步请求
+                cache:false,//是否缓存结果
+                type:"POST",//请求方式
+                dataType:"json",//服务器返回什么类型数据 text xml javascript json(javascript对象)
+                success:function(result){//函数会在服务器执行成功后执行，result就是服务器返回结果
+                    alert("Logout success!");      
+
+                    window.location.reload() ;
+                             
+                },
+                error:function(jqXHR, textStatus, errorThrown) {
+                   alert(result.msg) 
+
+                }
+             });
+
+        }
+
+
+        function close_register_window(){
+            $('#register-window').hide();
+        }
+
+        function close_login_window(){
+            $('#login-window').hide();
+        }
+
+
+    </script>
+
+    </body>
+    <!-- .(end) body of the homePage, where the styling is defined ------------------------------------------------------------------------>
+
+    <!-- footer of the homePage ------------------------------------------------------------------------------------------------------------>
+    <div class="header">
+        <div class="logo">       
+            <p class="text-header">GATOR COUNSEL</p>
+            <img class="gator-logo" alt="gator counsel" src="images/Florida_Gators_gator_logo.png" readonly value="open"></input>
+        </div>
+        <div class="container-options-header">
+            <div class="options-header-actual">
+                HOME PAGE
+            </div>
+            <div class="options-header" onclick="window.location.href ='adventures.html'">
+                PRODUCT
+            </div>
+            <div class="options-header" onclick="window.location.href ='rankings.html'" >
+                DOWNLOAD
+            </div>
+            <div class="options-header"  onclick="window.location.href ='faq.html'">
+                FAQ
+            </div>
+            <div class="options-header"  onclick="window.location.href ='aboutUs.html'">
+                ABOUT US
+            </div>
+        </div>
+        <div class="container-images-footer">
+            <img src="images/instagram-new-outline.png" class="images-footer" alt="insta">
+            <img src="images/facebook-outline.png" class="images-footer" alt="facebook">
+            <img src="images/52-527592_visit-twitter-twitter-png-logo-outline.png" class="images-footer" alt="twitter">
+        </div>
+    </div>
+    <!-- .(end) footer of the homePage ------------------------------------------------------------------------------------------------------------>
+
+
+    <!-- <script src="SCRIPT/scrithomePage.js"></script> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.10.2/Sortable.min.js"></script> -->
+
+</html>
