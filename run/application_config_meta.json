@@ -1,0 +1,309 @@
+{
+  "keys": "/Users/youyin/Documents/AI/js_message_page/config/config.default.js",
+  "middleware": "/Users/youyin/Documents/AI/js_message_page/config/config.default.js",
+  "static": {
+    "prefix": "/Users/youyin/Documents/AI/js_message_page/config/config.default.js",
+    "dir": "/Users/youyin/Documents/AI/js_message_page/config/config.default.js",
+    "gzip": "/Users/youyin/Documents/AI/js_message_page/config/config.default.js",
+    "maxAge": "/Users/youyin/Documents/AI/js_message_page/config/config.default.js",
+    "dynamic": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-static/config/config.default.js",
+    "preload": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-static/config/config.default.js",
+    "buffer": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-static/config/config.default.js",
+    "maxFiles": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-static/config/config.default.js"
+  },
+  "security": {
+    "csrf": {
+      "enable": "/Users/youyin/Documents/AI/js_message_page/config/config.default.js",
+      "type": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-security/config/config.default.js",
+      "ignoreJSON": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-security/config/config.default.js",
+      "useSession": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-security/config/config.default.js",
+      "cookieName": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-security/config/config.default.js",
+      "sessionName": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-security/config/config.default.js",
+      "headerName": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-security/config/config.default.js",
+      "bodyName": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-security/config/config.default.js",
+      "queryName": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-security/config/config.default.js",
+      "supportedRequests": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-security/config/config.default.js",
+      "refererWhiteList": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-security/config/config.default.js"
+    },
+    "methodnoallow": {
+      "enable": "/Users/youyin/Documents/AI/js_message_page/config/config.default.js"
+    },
+    "domainWhiteList": "/Users/youyin/Documents/AI/js_message_page/config/config.default.js",
+    "protocolWhiteList": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-security/config/config.default.js",
+    "defaultMiddleware": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-security/config/config.default.js",
+    "xframe": {
+      "enable": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-security/config/config.default.js"
+    },
+    "hsts": {
+      "enable": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-security/config/config.local.js",
+      "maxAge": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-security/config/config.default.js",
+      "includeSubdomains": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-security/config/config.default.js"
+    },
+    "dta": {
+      "enable": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-security/config/config.default.js"
+    },
+    "noopen": {
+      "enable": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-security/config/config.default.js"
+    },
+    "nosniff": {
+      "enable": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-security/config/config.default.js"
+    },
+    "referrerPolicy": {
+      "enable": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-security/config/config.default.js"
+    },
+    "xssProtection": {
+      "enable": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-security/config/config.default.js"
+    },
+    "csp": {
+      "enable": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-security/config/config.default.js",
+      "policy": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-security/config/config.default.js"
+    },
+    "ssrf": {
+      "ipBlackList": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-security/config/config.default.js",
+      "ipExceptionList": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-security/config/config.default.js",
+      "checkAddress": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-security/config/config.default.js"
+    }
+  },
+  "session": {
+    "key": "/Users/youyin/Documents/AI/js_message_page/config/config.default.js",
+    "maxAge": "/Users/youyin/Documents/AI/js_message_page/config/config.default.js",
+    "renew": "/Users/youyin/Documents/AI/js_message_page/config/config.default.js",
+    "httpOnly": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-session/config/config.default.js",
+    "encrypt": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-session/config/config.default.js",
+    "logValue": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-session/config/config.default.js"
+  },
+  "helper": {
+    "shtml": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-security/config/config.default.js"
+  },
+  "jsonp": {
+    "limit": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-jsonp/config/config.default.js",
+    "callback": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-jsonp/config/config.default.js",
+    "csrf": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-jsonp/config/config.default.js"
+  },
+  "onerror": {
+    "errorPageUrl": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-onerror/config/config.default.js",
+    "appErrorFilter": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-onerror/config/config.default.js",
+    "templatePath": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-onerror/config/config.default.js"
+  },
+  "i18n": {
+    "defaultLocale": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-i18n/config/config.default.js",
+    "dirs": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-i18n/config/config.default.js",
+    "queryField": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-i18n/config/config.default.js",
+    "cookieField": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-i18n/config/config.default.js",
+    "cookieDomain": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-i18n/config/config.default.js",
+    "cookieMaxAge": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-i18n/config/config.default.js"
+  },
+  "watcher": {
+    "type": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-watcher/config/config.local.js",
+    "eventSources": {
+      "default": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-watcher/config/config.default.js",
+      "development": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-watcher/config/config.default.js"
+    }
+  },
+  "customLogger": {
+    "scheduleLogger": {
+      "consoleLevel": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-schedule/config/config.default.js",
+      "file": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-schedule/config/config.default.js"
+    }
+  },
+  "schedule": {
+    "directory": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-schedule/config/config.default.js"
+  },
+  "multipart": {
+    "mode": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-multipart/config/config.default.js",
+    "autoFields": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-multipart/config/config.default.js",
+    "defaultCharset": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-multipart/config/config.default.js",
+    "defaultParamCharset": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-multipart/config/config.default.js",
+    "fieldNameSize": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-multipart/config/config.default.js",
+    "fieldSize": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-multipart/config/config.default.js",
+    "fields": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-multipart/config/config.default.js",
+    "fileSize": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-multipart/config/config.default.js",
+    "files": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-multipart/config/config.default.js",
+    "fileExtensions": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-multipart/config/config.default.js",
+    "whitelist": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-multipart/config/config.default.js",
+    "allowArrayField": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-multipart/config/config.default.js",
+    "tmpdir": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-multipart/config/config.default.js",
+    "cleanSchedule": {
+      "cron": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-multipart/config/config.default.js",
+      "disable": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-multipart/config/config.default.js"
+    }
+  },
+  "development": {
+    "watchDirs": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-development/config/config.default.js",
+    "ignoreDirs": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-development/config/config.default.js",
+    "fastReady": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-development/config/config.default.js",
+    "reloadOnDebug": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-development/config/config.default.js",
+    "overrideDefault": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-development/config/config.default.js",
+    "overrideIgnore": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-development/config/config.default.js"
+  },
+  "logrotator": {
+    "filesRotateByHour": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-logrotator/config/config.default.js",
+    "hourDelimiter": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-logrotator/config/config.default.js",
+    "filesRotateBySize": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-logrotator/config/config.default.js",
+    "maxFileSize": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-logrotator/config/config.default.js",
+    "maxFiles": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-logrotator/config/config.default.js",
+    "rotateDuration": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-logrotator/config/config.default.js",
+    "maxDays": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-logrotator/config/config.default.js"
+  },
+  "view": {
+    "root": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-view/config/config.default.js",
+    "cache": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-view/config/config.local.js",
+    "defaultExtension": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-view/config/config.default.js",
+    "defaultViewEngine": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-view/config/config.default.js",
+    "mapping": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg-view/config/config.default.js"
+  },
+  "env": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+  "name": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+  "cookies": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+  "proxy": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+  "maxIpsCount": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+  "maxProxyCount": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+  "protocolHeaders": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+  "ipHeaders": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+  "hostHeaders": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+  "pkg": {
+    "name": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+    "version": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+    "description": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+    "private": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+    "egg": {
+      "declarations": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js"
+    },
+    "dependencies": {
+      "egg": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+      "egg-scripts": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+      "egg-session": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+      "jsonfile": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js"
+    },
+    "devDependencies": {
+      "egg-bin": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+      "egg-ci": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+      "egg-mock": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+      "eslint": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+      "eslint-config-egg": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js"
+    },
+    "engines": {
+      "node": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js"
+    },
+    "scripts": {
+      "start": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+      "stop": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+      "dev": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+      "debug": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+      "test": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+      "test-local": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+      "cov": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+      "lint": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+      "ci": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js"
+    },
+    "ci": {
+      "version": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+      "type": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js"
+    },
+    "repository": {
+      "type": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+      "url": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js"
+    },
+    "author": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+    "license": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js"
+  },
+  "baseDir": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+  "HOME": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+  "rundir": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+  "dump": {
+    "ignore": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+    "timing": {
+      "slowBootActionMinDuration": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js"
+    }
+  },
+  "confusedConfigurations": {
+    "bodyparser": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+    "notFound": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+    "sitefile": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+    "middlewares": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+    "httpClient": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js"
+  },
+  "notfound": {
+    "pageUrl": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js"
+  },
+  "siteFile": {
+    "/favicon.ico": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+    "cacheControl": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js"
+  },
+  "bodyParser": {
+    "enable": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+    "formLimit": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+    "jsonLimit": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+    "textLimit": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+    "strict": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+    "queryString": {
+      "arrayLimit": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+      "depth": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+      "parameterLimit": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js"
+    },
+    "onerror": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js"
+  },
+  "logger": {
+    "dir": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+    "env": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+    "level": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+    "consoleLevel": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+    "disableConsoleAfterReady": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+    "outputJSON": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+    "buffer": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+    "appLogName": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+    "coreLogName": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+    "agentLogName": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+    "errorLogName": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+    "coreLogger": {
+      "consoleLevel": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.local.js"
+    },
+    "allowDebugAtProd": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+    "enablePerformanceTimer": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js"
+  },
+  "httpclient": {
+    "enableDNSCache": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+    "dnsCacheLookupInterval": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+    "dnsCacheMaxLength": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+    "request": {
+      "timeout": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js"
+    },
+    "httpAgent": {
+      "keepAlive": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js"
+    },
+    "httpsAgent": {
+      "keepAlive": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js"
+    },
+    "useHttpClientNext": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js"
+  },
+  "meta": {
+    "enable": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+    "logging": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js"
+  },
+  "coreMiddleware": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+  "workerStartTimeout": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+  "serverTimeout": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+  "cluster": {
+    "listen": {
+      "path": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+      "port": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+      "hostname": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js"
+    }
+  },
+  "clusterClient": {
+    "maxWaitTime": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js",
+    "responseTimeout": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js"
+  },
+  "onClientError": "/Users/youyin/Documents/AI/js_message_page/node_modules/egg/config/config.default.js"
+}
